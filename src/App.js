@@ -28,6 +28,12 @@ const App = () => {
     document.body.classList.add('is-loaded')
     childRef.current.init();
     trackPage(page);
+    
+
+    const head = document.querySelector('head');
+    const script = document.createElement('script');
+    script.setAttribute('src',  'https://assets.calendly.com/assets/external/widget.js');
+    head.appendChild(script);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location]);
 
