@@ -32,7 +32,7 @@ namespace appointmentcalendar.Controllers
             var requestObj = new
             {
                 userID = string.Empty,
-                promoID = string.Empty,
+                promoID = "192",
                 sessionID = string.Empty,
                 firstName = payload.payload.invitee.name,
                 lastName = payload.payload.invitee.last_name,
