@@ -8,8 +8,8 @@ using Microsoft.Extensions.Logging;
 namespace appointmentcalendar.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
+    [Route("api/[controller]")]
+    public class TestController : ControllerBase
     {
         [HttpGet]
         public ActionResult<string> Get()

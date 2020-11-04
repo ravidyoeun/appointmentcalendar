@@ -44,7 +44,6 @@ namespace appointmentcalendar.Controllers
             client.Timeout = -1;
             var request = new RestRequest(Method.POST);
             request.AddHeader("Content-Type", "application/json");
-            request.AddHeader("Cookie", "__cfduid=d10d5170c398ba84a522507a98ce1fca31603990685");
             request.AddParameter("application/json", payLoad, ParameterType.RequestBody);
             IRestResponse response = client.Execute(request);
             return payload;
